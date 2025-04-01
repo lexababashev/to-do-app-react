@@ -38,11 +38,11 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 p-4">
-      <h1 className="text-4xl font-bold text-center mb-6 text-blue-600">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-gray-900 to-gray-800 p-4">
+      <h1 className="text-4xl font-bold text-center mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
         To-Do List
       </h1>
-      <div className="w-full max-w-md bg-white p-6 rounded-lg shadow-md">
+      <div className="w-full max-w-md bg-gray-800 p-6 rounded-lg shadow-lg">
         <TodoList
           todos={todos}
           removeTask={removeTask}

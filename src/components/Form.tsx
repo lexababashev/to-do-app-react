@@ -14,20 +14,22 @@ function Form({ addTask }: FormProps) {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex items-center mt-4">
-      <input
-        type="text"
-        value={title}
-        onChange={(e) => setTitle(e.target.value)}
-        className="flex-1 p-2 border rounded-l-lg focus:outline-none focus:ring focus:ring-blue-300"
-        placeholder="Enter a task..."
-      />
-      <button
-        type="submit"
-        className="px-4 py-2 bg-blue-500 text-white rounded-r-lg hover:bg-blue-600 focus:ring focus:ring-blue-300"
-      >
-        Add
-      </button>
+    <form onSubmit={handleSubmit} className="mt-4">
+      <div className="flex flex-col space-y-2">
+        <input
+          type="text"
+          value={title}
+          onChange={(e) => setTitle(e.target.value)}
+          className="p-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-200 placeholder-gray-400"
+          placeholder="Enter a task..."
+        />
+        <button
+          type="submit"
+          className="px-4 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors"
+        >
+          Add Task
+        </button>
+      </div>
     </form>
   );
 }
