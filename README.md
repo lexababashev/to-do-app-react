@@ -11,7 +11,6 @@ A simple todo list app built with:
 
 - Add/delete tasks
 - Mark tasks as complete
-- Tasks saved in browser
 
 ## How to Run
 
